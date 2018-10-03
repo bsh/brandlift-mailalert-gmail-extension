@@ -34,6 +34,8 @@ InboxSDK.load("1", "your-InboxSDK-api-key").then(function(sdk) {
                 addressesDomains.push(domain);
             });
 
+            var addressesDomains = Array.from(new Set(addressesDomains));
+
             fLenAdresses = addressesDomains.length;
             fLenCompeting = competingDomains.length;
 
